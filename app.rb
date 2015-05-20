@@ -14,7 +14,6 @@ end
 
 ActiveRecord::Migrator.up 'nothing'
 
-
 # ---
 
 class Bicycle < ActiveRecord::Base
@@ -25,10 +24,10 @@ class Bicycle < ActiveRecord::Base
   before_validation :do_before_validation
   after_validation :do_after_validation
   before_save :do_before_save
-  # around_save :do_around_save
+  around_save :do_around_save
   after_save :do_after_save
   before_create :do_before_create
-  # around_create :do_around_create
+  around_create :do_around_create
   after_create :do_after_create
   before_update :do_before_update
   around_update :do_around_update
@@ -139,14 +138,13 @@ end
 # ---
 # playing with the diff AR methods here, yo
 
-p b = Bicycle.new(brand: 'schwinn', model: 'the red one')
-p b.save
-p "*********"
-p Bicycle.create(brand: 'huffy', model: 'the green one')
-p "*********"
-p b.update(model: 'the yellow one')
-p "*********"
-p Bicycle.commit
-p "*********"
-p b.destroy
+# p b = Bicycle.new(brand: 'schwinn', model: 'the red one')
+# p b.save
+# p "*********"
+# p b = Bicycle.create(brand: 'huffy', model: 'the green one')
+# p c = Bicycle.create(brand: 'dodge', model: 'the yellow one')
+# p "*********"
+# p b.update(model: 'the yellow one')
 # p Bicycle.all
+# p b.destroy
+
