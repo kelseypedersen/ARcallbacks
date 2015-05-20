@@ -4,7 +4,8 @@
 __________________________________________________________
 b = Bicycle.new(brand: 'schwinn', model: 'the red one')
 __________________________________________________________
-- -- create_table(:bicycles)
+
+-- create_table(:bicycles)
    -> 0.0053s
 do_after_initialize
 #<Bicycle id: nil, brand: "schwinn", model: "the red one">
