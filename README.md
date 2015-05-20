@@ -5,7 +5,7 @@ __________________________________________________________
 b = Bicycle.new(brand: 'schwinn', model: 'the red one')
 __________________________________________________________
 - -- create_table(:bicycles)
-   - -> 0.0053s
+   -> 0.0053s
 - do_after_initialize
 - #<Bicycle id: nil, brand: "schwinn", model: "the red one">
 
@@ -15,7 +15,7 @@ __________________________________________________________
 __________________________________________________________
 
 -- create_table(:bicycles)
-   - -> 0.0059s
+   -> 0.0059s
 - do_after_initialize
 - #<Bicycle id: nil, brand: "schwinn", model: "the red one">
 - do_before_validation
@@ -31,7 +31,7 @@ __________________________________________________________
 __________________________________________________________
 
 -- create_table(:bicycles)
-   - -> 0.0062s
+   -> 0.0062s
 - do_after_initialize
 - do_before_validation
 - do_after_validation
@@ -46,7 +46,7 @@ __________________________________________________________
 __________________________________________________________
 
 -- create_table(:bicycles)
-   - -> 0.0075s
+   -> 0.0075s
 - do_before_validation
 - do_after_validation
 - do_before_save
@@ -59,8 +59,9 @@ __________________________________________________________
 __________________________________________________________
 - b.destroy
 __________________________________________________________
+
 -- create_table(:bicycles)
-   - -> 0.0052s
+   -> 0.0052s
 - do_after_initialize
 - do_before_validation
 - do_after_validation
