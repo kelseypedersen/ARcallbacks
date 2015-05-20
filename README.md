@@ -7,7 +7,7 @@ __________________________________________________________
 - -- create_table(:bicycles)
    -> 0.0053s
 - do_after_initialize
-- #<Bicycle id: nil, brand: "schwinn", model: "the red one">
+- "#<Bicycle id: nil, brand: "schwinn", model: "the red one">"
 
 __________________________________________________________
 - b = Bicycle.new(brand: 'schwinn', model: 'the red one')
@@ -17,7 +17,7 @@ __________________________________________________________
 -- create_table(:bicycles)
    -> 0.0059s
 - do_after_initialize
-- #<Bicycle id: nil, brand: "schwinn", model: "the red one">
+- "#<Bicycle id: nil, brand: "schwinn", model: "the red one">"
 - do_before_validation
 - do_after_validation
 - do_before_save
@@ -39,7 +39,7 @@ __________________________________________________________
 - do_before_create
 - do_after_create
 - do_after_save
-- #<Bicycle id: 1, brand: "huffy", model: "the green one">
+- '#<Bicycle id: 1, brand: "huffy", model: "the green one">'
 
 __________________________________________________________
 - b.update(model: 'the yellow one')
@@ -69,7 +69,7 @@ __________________________________________________________
 - do_before_create
 - do_after_create
 - do_after_save
-- #<Bicycle id: 1, brand: "huffy", model: "the green one">
+- "#<Bicycle id: 1, brand: "huffy", model: "the green one">"
 - do_before_destroy
 - do_around_destroy
 - do_after_destroy
